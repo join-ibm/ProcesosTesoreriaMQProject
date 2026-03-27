@@ -7,3 +7,84 @@ packages:
   gitUrl: https://github.com/join-ibm
   gitUsername: join-ibm
   gitBranch: main
+- name: WmMQAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+services:
+- serviceName: project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections:IBM_MQ_Tesoreria
+  packages:
+  - name: ProcesosTesoreriaMQProject
+    version: "1.0"
+  - name: WmMQAdapter
+    version: 6.5.0.0.19
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+configurationVariables:
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.channel
+  : DEV.APP.SVRCONN
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.password
+  : "{AES}Bn9SJS2jWRmPbE0tJ+VAPA=="
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.queueManagerName
+  : QM1
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.sslOptions
+  : ""
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.sslKeyStoreAlias
+  : ""
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.userId
+  : app
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.sslKeyStorePassword
+  : "{AES}aYrXC43dTWsDUHRWG5mhTA=="
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.sslCipherSpec
+  : TLS_RSA_WITH_AES_128_CBC_SHA256
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.sslTrustStoreAlias
+  : ""
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.dynamicQueuePrefix
+  : ""
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.hostName
+  : qm-dev-ibm-mq-qm-cp4i-mq.apps.itz-gc4hvk.infra01-lb.fra02.techzone.ibm.com
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.recvExit
+  : ""
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.cacheOverriddenConnections
+  : "true"
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.securityExitInit
+  : ""
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.CCSID
+  : CP819
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.encoding
+  : 00273-Native
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionEnabled
+  : "false"
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.sendExitInit
+  : ""
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.sslKeyStore
+  : ""
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.ccdtFilePath
+  : ""
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.securityExit
+  : ""
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.recvExitInit
+  : ""
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.port
+  : "443"
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.queueName
+  : DEV.QUEUE.1
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.ProcesosTesoreriaMQProject.project.procesostesoreriamq.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBM_MQ_Tesoreria.connectionSettings.sendExit
+  : ""
