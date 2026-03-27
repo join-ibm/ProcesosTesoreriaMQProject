@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: ProcesosTesoreriaMQProject
+  gitServerName: F2F_Repo
+  gitUrl: https://github.com/join-ibm
+  gitUsername: join-ibm
+  gitBranch: main
